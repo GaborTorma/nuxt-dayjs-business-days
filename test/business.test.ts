@@ -2,6 +2,11 @@ import { fileURLToPath } from 'node:url'
 import { describe, it, expect } from 'vitest'
 import { setup, $fetch } from '@nuxt/test-utils'
 
+/**
+ * TEST NOT WORKING
+ * Dayjs issue: https://github.com/iamkun/dayjs/issues/1132
+ */
+
 describe('ssr', async () => {
 	await setup({
 		rootDir: fileURLToPath(new URL('../playground', import.meta.url)),
