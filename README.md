@@ -4,15 +4,6 @@ Extend [dayjs-nuxt](https://github.com/fumeapp/dayjs) plugin with business days 
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
 
-## Instructions
-
-<!-- Highlight some of the features your module provide here -->
-
-- It automatically call `dayjs.locale('en')` when `i18n.setLocale('en')` is called.
-- Always use `i18n.setLocale('en')` function instead of setting `i18n.locale.value = 'en'`, because value setting not fire the `i18n:beforeLocaleSwitch` and `i18n:localeSwitched` nuxt hooks.
-- Don't use `dayjs.locale` function, because it doesn't called back the `i18n.setLocale`.
-- You can change locales locally with `dayjs().locale('en')` function.
-
 ## Quick Setup
 
 1. Add `nuxt-dayjs-i18n` dependency to your project
