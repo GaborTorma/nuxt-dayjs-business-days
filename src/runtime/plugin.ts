@@ -1,5 +1,5 @@
 import { defineNuxtPlugin, useNuxtApp } from '#app'
-import dayjsBusinessDaysPlugin from 'dayjs-business-days2'
+import dayjsBusinessDaysPlugin from 'dayjs-business-days2/src'
 
 export default defineNuxtPlugin({
 	name: 'nuxt-dayjs-business-days-plugin',
