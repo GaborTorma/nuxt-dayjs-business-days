@@ -1,12 +1,13 @@
 import { defineNuxtPlugin, useNuxtApp } from '#app'
 import dayjsBusinessDaysPlugin from 'dayjs-business-days2/src'
+import { useDayjs } from '#dayjs'
 
 export default defineNuxtPlugin({
 	name: 'nuxt-dayjs-business-days-plugin',
 	hooks: {
 		'app:created'() {
 			const nuxtApp = useNuxtApp()
-			const { $dayjs: dayjs } = nuxtApp
+			const dayjs = useDayjs()
 
 			if (!dayjs) {
 				throw new Error('nuxt-dayjs module not found')

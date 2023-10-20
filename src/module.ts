@@ -1,5 +1,5 @@
 import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit'
-import { BusinessDaysPluginOptions } from 'dayjs-business-days2'
+import type { BusinessDaysPluginOptions } from 'dayjs-business-days2'
 
 export interface ModuleOptions extends BusinessDaysPluginOptions {
 	debug?: boolean
@@ -34,7 +34,7 @@ export default defineNuxtModule<ModuleOptions>({
 	},
 	setup(options, nuxt) {
 		const debug = (message: string) =>
-			options.debug && console.log(`nuxt-dayjs-bussiness-days: ${message}`)
+			options.debug && console.log(`nuxt-dayjs-business-days: ${message}`)
 		debug('setup started')
 
 		nuxt.options.runtimeConfig.public.dayjsBusinessDays = options
@@ -46,7 +46,7 @@ export default defineNuxtModule<ModuleOptions>({
 		*/
 
 		if (options.verbose) {
-			console.log('nuxt-dayjs-bussiness-days options:', options)
+			console.log('nuxt-dayjs-business-days options:', options)
 		}
 
 		const resolver = createResolver(import.meta.url)

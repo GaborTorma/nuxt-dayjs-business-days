@@ -14,11 +14,11 @@ describe('ssr', async () => {
 
 	it('2022-10-15 is business day', async () => {
 		const html = await $fetch('/')
-		expect(html).toContain('2022-10-15 isBusinessDay: true')
+		expect(html).toContain('2022-10-15 (saturday) isBusinessDay: true')
 	})
 
-	it('2022-01-01 is holiday', async () => {
+	it('2022-11-01 is holiday', async () => {
 		const html = await $fetch('/')
-		expect(html).toContain('2022-01-01 isHoliday: true')
+		expect(html).toContain('2022-11-01 (tuesday) isHoliday: true')
 	})
 })
