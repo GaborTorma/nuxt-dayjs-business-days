@@ -23,7 +23,7 @@ npm install --save-dev @gabortorma/nuxt-dayjs-business-days
 
 ```js
 export default defineNuxtConfig({
-	modules: ['nuxt-dayjs', '@gabortorma/nuxt-dayjs-business-days'],
+  modules: ['nuxt-dayjs', '@gabortorma/nuxt-dayjs-business-days'],
 })
 ```
 
@@ -33,16 +33,16 @@ You can specify the special dates, debug and verbose options
 
 ```ts
 export default defineNuxtConfig({
-	...
-	dayjsBusinessDays: {
-		holidays: ['2022-11-01'],
-		additionalWorkingDays: ['2022-10-15'],
-		holidayFormat: 'YYYY-MM-DD', // default
-		additionalWorkingDayFormat: 'YYYY-MM-DD', // default
-		debug: true, // default: false 
-		verbose: true, // default: false 
-	}
-	...
+  ...
+  dayjsBusinessDays: {
+    holidays: ['2022-11-01'],
+    additionalWorkingDays: ['2022-10-15'],
+    holidayFormat: 'YYYY-MM-DD', // default
+    additionalWorkingDayFormat: 'YYYY-MM-DD', // default
+    debug: true, // default: false
+    verbose: true, // default: false
+  }
+  ...
 })
 ```
 
