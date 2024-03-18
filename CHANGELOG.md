@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.4.0
+
+[compare changes](https://github.com/GaborTorma/nuxt-dayjs-business-days/compare/v0.3.0...v0.4.0)
+
+### 🏡 Chore
+
+- ⚠️  Upgrade all deps. ([c018531](https://github.com/GaborTorma/nuxt-dayjs-business-days/commit/c018531))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Upgrade all deps. ([c018531](https://github.com/GaborTorma/nuxt-dayjs-business-days/commit/c018531))
+
+### ❤️ Contributors
+
+- Gábor Torma <gabor@torma.dev>
+
 ## v0.3.0
 
 [compare changes](https://github.com/GaborTorma/nuxt-dayjs-business-days/compare/v0.2.1...v0.3.0)
